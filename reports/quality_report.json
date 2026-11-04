@@ -1,0 +1,106 @@
+{
+    "dataset": {
+        "total_rows": 1067371,
+        "total_columns": 11
+    },
+    "schema": {
+        "valid": true,
+        "required_columns": [
+            "Invoice",
+            "StockCode",
+            "Description",
+            "Quantity",
+            "InvoiceDate",
+            "Price",
+            "Customer ID",
+            "Country"
+        ],
+        "missing_columns": [],
+        "unexpected_columns": []
+    },
+    "completeness": {
+        "total_missing_values": 247389,
+        "total_cells": 11741081,
+        "completeness_score": 97.89,
+        "columns": {
+            "Invoice": {
+                "missing_count": 0,
+                "missing_percentage": 0.0
+            },
+            "StockCode": {
+                "missing_count": 0,
+                "missing_percentage": 0.0
+            },
+            "Description": {
+                "missing_count": 4382,
+                "missing_percentage": 0.41
+            },
+            "Quantity": {
+                "missing_count": 0,
+                "missing_percentage": 0.0
+            },
+            "InvoiceDate": {
+                "missing_count": 0,
+                "missing_percentage": 0.0
+            },
+            "Price": {
+                "missing_count": 0,
+                "missing_percentage": 0.0
+            },
+            "Customer ID": {
+                "missing_count": 243007,
+                "missing_percentage": 22.77
+            },
+            "Country": {
+                "missing_count": 0,
+                "missing_percentage": 0.0
+            },
+            "source_row": {
+                "missing_count": 0,
+                "missing_percentage": 0.0
+            },
+            "source_sheet": {
+                "missing_count": 0,
+                "missing_percentage": 0.0
+            },
+            "source_file": {
+                "missing_count": 0,
+                "missing_percentage": 0.0
+            }
+        }
+    },
+    "duplicates": {
+        "duplicate_count": 34335,
+        "duplicate_percentage": 3.22,
+        "unique_record_count": 1033036,
+        "uniqueness_score": 96.78
+    },
+    "business_rules": {
+        "negative_quantity_count": 22950,
+        "likely_cancellation_count": 19493,
+        "suspicious_negative_quantity_count": 3457,
+        "negative_price_count": 5,
+        "zero_price_count": 6202,
+        "invalid_date_count": 0,
+        "missing_critical_record_count": 0,
+        "missing_customer_id_count": 243007,
+        "missing_description_count": 4382,
+        "invalid_record_count": 3462,
+        "validity_score": 99.68
+    },
+    "quality_score": {
+        "overall": 98.42,
+        "components": {
+            "completeness": 97.89,
+            "uniqueness": 96.78,
+            "validity": 99.68,
+            "schema": 100.0
+        },
+        "weights": {
+            "completeness": 0.4,
+            "uniqueness": 0.2,
+            "validity": 0.3,
+            "schema": 0.1
+        }
+    }
+}

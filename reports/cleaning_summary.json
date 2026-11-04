@@ -1,0 +1,11 @@
+{
+    "total_input_records": 1067371,
+    "duplicates_removed": 34335,
+    "unique_records": 1033036,
+    "cancellation_records": 19103,
+    "quarantined_records": 3398,
+    "cleaned_sales_records": 1010535,
+    "missing_customer_id_flags": 231040,
+    "missing_description_flags": 1642,
+    "zero_price_review_flags": 2621
+}
