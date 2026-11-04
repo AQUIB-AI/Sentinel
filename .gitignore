@@ -1,0 +1,40 @@
+
+# Python virtual environments
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables
+.env
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+
+# Raw datasets - never upload to GitHub
+data/raw/*
+!data/raw/.gitkeep
+
+# Generated datasets
+data/processed/*
+!data/processed/.gitkeep
+
+data/quarantine/*
+!data/quarantine/.gitkeep
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log

@@ -1,0 +1,27 @@
+project:
+  name: Sentinel
+  version: "1.0.0"
+  environment: development
+
+data:
+  input_path: data/raw/orders.csv
+  processed_path: data/processed/cleaned_orders.csv
+  quarantine_path: data/quarantine/failed_records.csv
+
+database:
+  type: sqlite
+  path: data/sentinel.db
+
+quality:
+  max_null_percentage: 5.0
+  allow_duplicate_records: false
+  allow_negative_amounts: false
+
+pipeline:
+  batch_size: 10000
+  retry_attempts: 3
+  enable_auto_recovery: true
+
+logging:
+  level: INFO
+  file: reports/sentinel.log
